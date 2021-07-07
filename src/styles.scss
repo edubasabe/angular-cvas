@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~highlight.js/styles/github.css';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type=text], input[type=email] {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+label {
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  color:#235796;
+}

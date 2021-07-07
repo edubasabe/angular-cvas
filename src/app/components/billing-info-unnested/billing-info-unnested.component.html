@@ -1,0 +1,30 @@
+<h1>Control Value Accessor</h1>
+<div class="container">
+  <form [formGroup]="nestedForm" (ngSubmit)="onSubmit()">
+    <app-basic-info formControlName="basicInfo"></app-basic-info>
+    <app-address-info formControlName="address"></app-address-info>
+
+    <button type="submit" [disabled]="nestedForm.invalid">Enviar</button>
+  </form>
+</div>
+<br><br>
+<ul>
+  <li><h3>Parent Component: BillingInfoUnnested</h3></li>
+  <li>
+    <pre>
+      <code [highlight]="code" [languages]="['javascript']"></code>
+  </pre>
+  </li>
+  <li><h3>Child Component: BasicInfo</h3></li>
+  <li>
+    <pre>
+      <code [highlight]="codeBasicInfo"></code>
+  </pre>
+  </li>
+  <li><h3>Child Component: AddressInfo</h3></li>
+  <li>
+    <pre>
+      <code [highlight]="codeAddressInfo"></code>
+  </pre>
+  </li>
+</ul>
